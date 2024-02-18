@@ -9,6 +9,7 @@ M.treesitter = {
     "javascript",
     "typescript",
     "tsx",
+    "java",
     "c",
     "markdown",
     "markdown_inline",
@@ -22,6 +23,10 @@ M.treesitter = {
 }
 
 M.mason = {
+  registries = {
+    'github:nvim-java/mason-registry',
+    'github:mason-org/mason-registry',
+  },
   ensure_installed = {
     -- lua stuff
     "lua-language-server",
@@ -29,10 +34,8 @@ M.mason = {
 
     -- golang
     "gopls",
-   
     -- java
-    "java_language_server",
-
+    "jdtls",
     -- web dev stuff
     "css-lsp",
     "html-lsp",
